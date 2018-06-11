@@ -1,0 +1,20 @@
+create table courses (
+    course_id                   int primary key,
+    name                        varchar(255),
+    department_id               int,
+    school_id                   int,
+    course_type_id              int,
+    term_bin_type_id            int,
+    grade_level_id              int,
+    eoy_test_id                 int,
+    default_grading_scale_id    int,
+    standards_based_grading     int,
+    credits                     int,
+    exclude_missing             int,
+    teacher_sections_only       int,
+    ignore_max_expected_score   int,
+    order_key                   int,
+    from_date                   datetime,
+    thru_date                   datetime,
+    active                      int
+)
