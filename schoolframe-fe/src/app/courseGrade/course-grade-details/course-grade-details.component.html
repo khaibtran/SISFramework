@@ -1,0 +1,11 @@
+<div *ngIf="courseGrade">
+  <div routerLink="update" class="btn btn-primary pull-right">Update Course Grade: {{courseGrade.courseGradeId}}</div>
+  <p>Student ID: {{courseGrade.studentId}}</p>
+  <p>Course ID: {{courseGrade.courseId}}</p>
+  <p>Score: {{courseGrade.score}}</p>
+</div>
+
+<div *ngIf="error" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    {{error.error.message ? error.error.message : 'There was an error retrieving course grade.'}}
+</div>

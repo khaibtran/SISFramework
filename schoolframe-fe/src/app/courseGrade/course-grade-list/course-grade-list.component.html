@@ -1,0 +1,14 @@
+<h2>
+    Course Grades
+    <div routerLink="create" class="btn btn-primary pull-right">Create Course Grade</div>
+</h2>
+<p>Select a student from the list below.</p>
+<course-grade-card *ngFor="let courseGrade of courseGrades"
+    [courseGrade]="courseGrade"
+    (courseGradeDeleted)="deleteCourseGrade($event)" >
+</course-grade-card>
+
+<div *ngIf="error" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    There was an error retrieving course grades.
+</div>

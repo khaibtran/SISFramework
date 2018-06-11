@@ -1,0 +1,6 @@
+<div class="panel panel-default">
+  <div *ngIf="student" class="panel-heading">
+    <a [routerLink]="student.studentId">{{student.firstName}} {{student.lastName}}</a>
+    <div class="glyphicon glyphicon-remove pull-right" (click)="deleteStudent()"></div>
+  </div>
+</div>

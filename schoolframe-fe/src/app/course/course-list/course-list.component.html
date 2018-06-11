@@ -1,0 +1,14 @@
+<h2>
+  Course
+  <div routerLink="create" class="btn btn-primary pull-right">Create Course</div>
+</h2>
+<p>Select a course from the list below.</p>
+<course-card *ngFor="let course of courses"
+    [course]="course"
+    (courseDeleted)="deleteCourse($event)" >
+</course-card>
+
+<div *ngIf="error" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    There was an error retrieving courses.
+ </div>

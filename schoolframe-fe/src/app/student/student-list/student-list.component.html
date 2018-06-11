@@ -1,0 +1,14 @@
+<h2>
+    Students
+    <div routerLink="create" class="btn btn-primary pull-right">Create Student</div>
+</h2>
+<p>Select a student from the list below.</p>
+<student-card *ngFor="let student of students"
+    [student]="student"
+    (studentDeleted)="deleteStudent($event)" >
+</student-card>
+
+<div *ngIf="error" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    There was an error retrieving students.
+ </div>

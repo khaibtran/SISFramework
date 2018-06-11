@@ -1,0 +1,40 @@
+{
+   "name": "bloggit",
+   "version": "0.0.0",
+   "license": "MIT",
+   "dependencies": {
+      "@angular/common": "^5.0.0",
+      "@angular/compiler": "^5.0.0",
+      "@angular/core": "^5.0.0",
+      "@angular/forms": "^5.0.0",
+      "@angular/platform-browser": "^5.0.0",
+      "@angular/platform-browser-dynamic": "^5.0.0",
+      "@angular/router": "^5.0.0",
+      "angular-chart.js": "^1.1.1",
+      "angular-highcharts": "^6.0.0",
+      "angular2-google-login": "^1.0.9",
+      "angular4-fusioncharts": "^1.0.0",
+      "angular5-social-login": "^1.0.9",
+      "highcharts": "^6.1.0",
+      "zone.js": "^0.8.14"
+   },
+   "devDependencies": {
+      "@angular/cli": "^1.6.0",
+      "@angular/compiler-cli": "^5.0.0",
+      "@types/highcharts": "^5.0.22",
+      "@types/jasmine": "~2.8.3",
+      "@types/jasminewd2": "~2.0.2",
+      "@types/node": "~6.0.60",
+      "bootstrap": "3.3.7",
+      "jasmine-core": "~2.8.0",
+      "jasmine-spec-reporter": "~4.2.1",
+      "karma": "~2.0.0",
+      "karma-chrome-launcher": "~2.2.0",
+      "karma-coverage-istanbul-reporter": "^1.2.1",
+      "karma-jasmine": "~1.1.0",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "protractor": "~5.1.2",
+      "ts-node": "~3.2.0",
+      "typescript": "~2.4.2"
+   }
+}

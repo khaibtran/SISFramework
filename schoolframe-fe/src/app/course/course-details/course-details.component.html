@@ -1,0 +1,14 @@
+<div *ngIf="course">
+  <h1>
+    {{course.name}}
+    <div routerLink="update" class="btn btn-primary pull-right">Update {{course.name}}</div>
+  </h1>
+  <p>Course ID: {{course.courseId}}</p>
+  <p>School ID: {{course.schoolId}}</p>
+  <p>Credits: {{course.credits}}</p>
+</div>
+
+<div *ngIf="error" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    {{error.error.message ? error.error.message : 'There was an error retrieving students.'}}
+</div>

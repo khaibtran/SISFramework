@@ -1,0 +1,21 @@
+<div *ngIf= "student">
+  <h1>
+    {{student.firstName}} {{student.lastName}}
+    <div routerLink="update" class="btn btn-primary pull-right">Update {{student.firstName}} {{student.lastName}}</div>
+  </h1>
+  <p>School Id: {{student.schoolId}}</p>
+  <p>Grade Level Id: {{student.gradeLevelId}}</p>
+  <p>Course Grades Scores:</p>
+  <div [chart]="chart"></div>
+  <ul>
+    <li *ngFor="let grades of student.courseGrades">
+      {{grades.score}}
+    </li>
+  </ul>
+
+</div>
+
+<div *ngIf="error" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    {{error.error.message ? error.error.message : 'There was an error retrieving students.'}}
+</div>

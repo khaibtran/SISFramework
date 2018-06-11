@@ -1,0 +1,6 @@
+<div class="panel panel-default">
+  <div *ngIf="courseGrade" class="panel-heading">
+    <a [routerLink]="courseGrade.courseGradeId">{{courseGrade.courseGradeId}}</a>
+    <div class="glyphicon glyphicon-remove pull-right" (click)="deleteCourseGrade()"></div>
+  </div>
+</div>
